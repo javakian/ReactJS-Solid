@@ -24,7 +24,8 @@
     "@babel/runtime": "^7.1.2",
     "@solid/query-ldflex": "^2.5.1",
     "prop-types": "^15.6.2",
-    "solid-auth-client": "^2.3.0"
+    "solid-auth-client": "^2.3.0",
+    "@snyk/protect": "latest"
   },
   "peerDependencies": {
     "react": "^16.8.4"
@@ -71,6 +72,9 @@
     "start": "npm run start:demo",
     "start:demo": "webpack-dev-server --config=./webpack/webpack.demo.config.js",
     "test": "npm run lint && npm run jest -- --collectCoverage",
-    "test:dev": "npm run jest -- --watch"
-  }
+    "test:dev": "npm run jest -- --watch",
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
