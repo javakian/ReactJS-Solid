@@ -51,7 +51,7 @@
     "jest-mock-promise": "^1.0.23",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-hooks-testing-library": "0.3.4",
+    "react-hooks-testing-library": "0.6.0",
     "react-testing-library": "6.0.0",
     "webpack": "^4.19.1",
     "webpack-cli": "^3.1.0",
